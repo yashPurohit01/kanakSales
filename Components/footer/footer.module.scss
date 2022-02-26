@@ -1,0 +1,116 @@
+.footer {
+  background-color: rgb(38, 37, 35);
+  display: flex;
+  flex-direction: column;
+  & .footerContainer {
+    color: white;
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+
+    & .companyInfo {
+      width: 17rem;
+      & .companyMainInfo {
+        margin-left: 0.4rem;
+        & .comDes {
+          font-size: 0.8rem;
+          font-weight: 200;
+          /*  opacity: 0.5; */
+        }
+        & .comName {
+          font-size: 1.4rem;
+          font-weight: 300;
+          font-family: "Playfair Display", serif;
+        }
+        & .horizontalLine {
+          border: 1px solid white;
+          /*  opacity: 0.6; */
+        }
+      }
+      & .para {
+        font-family: "Poppins", sans-serif;
+        line-height: 5mm;
+        font-size: 0.8rem;
+        /*  opacity: 0.7; */
+        padding-left: 1rem;
+        word-spacing: 0.6mm;
+      }
+    }
+
+    & .contact {
+      margin: 0 1rem 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /*  opacity: 0.6; */
+
+      /* ustify-content: center; */
+
+      & .location {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0.5rem;
+        /*  opacity: 0.7; */
+        word-break: break-all;
+      }
+      & .info {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+      }
+    }
+
+    & .quickLinks {
+      /*  opacity: 0.6; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & .navLinks {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        /*  opacity: 0.6; */
+        & .pageLink {
+          font-size: 1rem;
+          & a {
+            color: white;
+            text-decoration: none;
+            & li {
+              list-style: square;
+            }
+          }
+        }
+      }
+    }
+  }
+  & .copyright {
+    border-top: 1px solid rgba(152, 151, 151, 0.352);
+    color: white;
+    & .lowerFooter {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      & .socialMedia {
+        display: flex;
+        & a {
+          color: white;
+          font-size: 2rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+.hr {
+  border: 3px solid rgb(239, 202, 18);
+  width: 6rem;
+  background-color: rgb(239, 202, 18);
+  border-radius: 4px;
+}

@@ -1,0 +1,124 @@
+/*  @use '../../Utility/Styles/Helper'; */
+/* @use '../../Utility/Styles/Variable'; */
+
+.headerContainer {
+  & .top_section {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .first_child {
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      background-color: rgb(255, 221, 53);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      width: 50%;
+      & .infosec {
+        text-align: center;
+        & .locationinfo {
+          padding-left: 0.3rem;
+        }
+      }
+    }
+    & .second_child {
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      background-color: hsl(5, 71%, 51%);
+      color: white;
+      width: 50%;
+      font-weight: 600;
+      & .infosec {
+        text-align: center;
+        & .emailinfo {
+          padding-left: 0.3rem;
+        }
+      }
+    }
+  }
+  & .Mid_Section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    & .companyLogoInfo {
+      display: flex;
+      align-items: center;
+      & .companyMainInfo {
+        margin-left: 0.4rem;
+        & .comDes {
+          font-size: 1.2rem;
+          font-weight: 700;
+          opacity: 0.5;
+        }
+        & .comName {
+          font-size: 2.2rem;
+          font-weight: 800;
+          font-family: "Playfair Display", serif;
+        }
+        & .horizontalLine {
+          border: 1px solid black;
+          opacity: 0.6;
+        }
+      }
+    }
+    & .col_two {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      & .trustlogo {
+        font-size: 3rem;
+      }
+      & .basicPara {
+        font-size: 0.7rem;
+        opacity: 0.6;
+      }
+    }
+    & .callInfo {
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      & .callLogo {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0;
+      }
+    }
+  }
+  & .navigations {
+    display: flex;
+    padding: 0.8rem;
+    background-color: hsl(5, 71%, 51%);
+    color: white;
+    justify-content: center;
+    & .navLinks {
+      display: flex;
+      & .pageLink {
+        margin-right: 3rem;
+        font-size: 1.2rem;
+        & a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .headerContainer {
+    & .top_section {
+      flex-direction: column;
+      & .first_child , & .second_child {
+        width: 100%;
+        
+      }
+    }
+   & .Mid_Section {
+     & .col_two , & .callInfo{
+       display: none;
+     }
+    }
+  }
+}
