@@ -61,3 +61,22 @@ export const ProductsInformations = [
         productpath:"/images/dry-wall-screw.jpg"
     },
 ]
+
+export const HomeQuanlityCard = [
+    {
+        id:1,
+        des:"Build with 100% Stainless Steel"
+    },
+    {
+        id:2,
+        des:"Rust Free Screws"
+    },
+    {
+        id:3,
+        des:"All with perfect fittings"
+    },
+    {
+        id:4,
+        des:"Fine Thread of all hardwares"
+    }
+]

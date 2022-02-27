@@ -55,6 +55,13 @@ $grident: linear-gradient(
       }
     }
   }
+  & .home_second_row{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
 }
 
 @media (max-width: 600px) {

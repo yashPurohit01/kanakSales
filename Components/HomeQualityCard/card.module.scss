@@ -1,0 +1,42 @@
+
+.cardContainer{
+    position: absolute;
+    z-index: 2;
+    top: 3rem;
+    left: 6rem;
+
+    & .card_outer_div{
+        border: 1px solid rgba(31, 31, 31, 0.116);
+        padding: 1rem;
+        width: 26rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        & .card_inner_heading{
+            text-align: center;
+
+        & .card_inner_content{
+            & .cardItems{
+                display: flex;
+                align-items: center;
+                font-size: 1.2rem;
+                margin: 1rem;
+                & p{
+                margin-bottom: 0;
+                text-align: center;
+                margin-left: 1rem ;
+                font-weight: 600;
+                font-family: 'Roboto Serif', sans-serif;
+                }
+            }
+            & .cardItems > div{
+                color: green;
+                font-weight: 800;
+                font-size: 2rem;
+            }
+        }
+        & h2{
+            margin: 0 2rem 0 2rem;
+        }
+    }
+    }
+}

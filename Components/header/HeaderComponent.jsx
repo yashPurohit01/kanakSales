@@ -7,6 +7,8 @@ import { GeneralInformation } from '../Informations'
 import { MdCall } from 'react-icons/md'
 import { RiSettings6Fill } from 'react-icons/ri'
 import Image from 'next/image'
+import NavBar from './NavBar'
+import NavScroll from './NavScroll'
 
 
 function HeaderComponent() {
@@ -70,7 +72,7 @@ function HeaderComponent() {
                     </div>
                 </div>
                 <div className={styles.navigations}>
-                    <div className={styles.navLinks}>
+                     <div className={styles.navLinks}>
 
                         <div className={styles.pageLink} >
                             <Link href="/" ><a>HOME</a></Link>
@@ -85,13 +87,10 @@ function HeaderComponent() {
                             <Link href="/contact"><a>CONTACT US</a></Link>
                         </div>
                     </div>
-
-                    <div>
-                 {/*    <div className={styles.pageLink}>
-                            <Link href="/contact" className="danger"><a>Offers</a></Link>
-                        </div> */}
-                    </div>
-
+ {/* 
+                    <NavBar/>
+                    <NavScroll/> */}
+              
                 </div>
 
             </section>
