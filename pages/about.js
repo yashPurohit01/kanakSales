@@ -4,7 +4,7 @@ import ControlledCarousel from '../Components/Caurosel/Caurosel'
 function About() {
   return (
     <div>
-      <ControlledCarousel/>
+   
     </div>
   )
 }

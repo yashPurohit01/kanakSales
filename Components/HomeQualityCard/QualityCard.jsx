@@ -25,9 +25,9 @@ function QualityCard() {
                         }
 
                     </div>
-                    <Button>
+                    <button className={styles.cardbttn}>
                         Call {contactTel}
-                    </Button>
+                    </button>
                 </div>
             </div>
         </div>

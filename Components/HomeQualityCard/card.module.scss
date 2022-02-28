@@ -1,12 +1,16 @@
+$maroon: hsl(5, 71%, 51%);
+$yellow: rgb(255, 217, 25);
 
 .cardContainer{
     position: absolute;
     z-index: 2;
     top: 3rem;
-    left: 6rem;
+    
+    float: right;
+    width: 100%;
 
     & .card_outer_div{
-        border: 1px solid rgba(31, 31, 31, 0.116);
+        border: 5px solid $yellow;
         padding: 1rem;
         width: 26rem;
         background-color: white;
@@ -36,6 +40,13 @@
         }
         & h2{
             margin: 0 2rem 0 2rem;
+        }
+        & .cardbttn{
+            background-color: $yellow;
+            padding: 0.6rem;
+            border-radius: .3rem;
+            border: none;
+            font-weight: 600;
         }
     }
     }

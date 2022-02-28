@@ -4,7 +4,7 @@ import AutoPlay from '../Components/Caurosel/Slider'
 function Contact() {
   return (
     <div>
-      <AutoPlay/>
+
     </div>
   )
 }

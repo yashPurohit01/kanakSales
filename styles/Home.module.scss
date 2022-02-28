@@ -11,33 +11,33 @@ $grident: linear-gradient(
   & .home_first_row {
     display: flex;
     flex-direction: column;
+    
     & .home_info_card {
       display: flex;
       flex-direction: row;
-     /*  gap: 3rem; */
+      /*  gap: 3rem; */
       justify-content: center;
-      min-height: 25rem;
+      min-height: 22rem;
       align-items: center;
       flex-wrap: wrap;
 
       & .home_info_child {
         font-size: 2rem;
         color: white;
-        width: 23rem;
+        width: 20rem;
         margin: 2rem;
         /* background-color: $yellow; */
-/*         border-bottom-left-radius: 1rem;
+        /*         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
  */
         & .home_row_card {
           text-align: center;
-          padding: 2rem;
+          padding: 1.5rem;
           border-bottom-left-radius: 1rem;
           border-bottom-right-radius: 1rem;
           border-top: 0;
-        
+
           & p {
-     
             font-size: 1.2rem;
           }
         }
@@ -45,7 +45,6 @@ $grident: linear-gradient(
           background-color: $maroon;
           border-top: 1rem solid $yellow;
           color: white;
-
         }
         &:is(:nth-of-type(2)) {
           background-color: $yellow;
@@ -55,12 +54,82 @@ $grident: linear-gradient(
       }
     }
   }
-  & .home_second_row{
+  & .home_second_row {
     display: flex;
     justify-self: center;
     align-items: center;
     flex-direction: column;
     position: relative;
+  }
+  & .home_third_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 1rem 0 1rem 0;
+    cursor: pointer;
+    & .ownerImg {
+      width: fit-content;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      margin: 2rem;
+      height: min-content;
+    }
+    & .vision_desc {
+      width: 30rem;
+      & strong {
+        font-family: "Permanent Marker", cursive;
+      }
+      & p {
+        padding: 1rem;
+        font-weight: 400;
+        text-rendering: geometricPrecision;
+        text-align: center;
+      }
+      & h3 {
+        text-align: center;
+        color: $maroon;
+        font-family: "Roboto Serif", sans-serif;
+      }
+    }
+  }
+  & .home_review_row {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+
+    & .review_card {
+      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      min-width: 20rem;
+      border: 1px solid $maroon;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin: 1rem;
+      height: 15rem;
+      & h4 {
+        font-family: "Roboto Serif", sans-serif;
+        text-align: center;
+      }
+      & strong {
+        font-family: "Permanent Marker", cursive;
+      }
+      & .com {
+        text-align: end;
+      }
+      & p {
+        text-align: center;
+        font-weight: 500;
+        opacity: 0.6;
+
+        box-sizing: border-box;
+      }
+    }
   }
 }
 
@@ -69,4 +138,19 @@ $grident: linear-gradient(
     width: 100%;
     flex-direction: column;
   }
+}
+.home_review_row::-webkit-scrollbar {
+  width: 2px;
+
+
+}
+ 
+.home_review_row::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  
+}
+ 
+.home_review_row::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
