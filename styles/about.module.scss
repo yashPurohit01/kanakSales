@@ -25,6 +25,7 @@ $secondary: "Roboto Slab", serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: .5rem;
     & .about_content_heading {
       border: 4px Solid $yellow;
       margin: 1rem 0 1rem 0;
@@ -51,6 +52,7 @@ $secondary: "Roboto Slab", serif;
       justify-content: space-evenly;
       width: 100%;
       flex-wrap: wrap-reverse;
+      padding: 1.2rem;
       & p{
           max-width: 30rem;
           margin: 1rem;
