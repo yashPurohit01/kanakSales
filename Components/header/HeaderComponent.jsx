@@ -26,13 +26,13 @@ function HeaderComponent() {
                     </div>
                     <div className={styles.second_child}>
                         <div className={styles.infosec}>
-                            <div> 
-                            <IoMdMailUnread className={styles.icon} />
-                            <span className={styles.emailinfo}>{email}</span>
+                            <div>
+                                <IoMdMailUnread className={styles.icon} />
+                                <span className={styles.emailinfo}>{email}</span>
                             </div>
-                            <div>                            
+                            <div>
                                 <MdCall className={styles.icon} />
-                               <span className={styles.Mobinfo}>{contactMob}</span>
+                                <span className={styles.Mobinfo}>{contactMob}</span>
                             </div>
 
                         </div>
@@ -48,7 +48,7 @@ function HeaderComponent() {
                         <Image src="/images/companylogo.png" alt="comapnyLogo" width="100" height="100" />
                         <div className={styles.companyMainInfo} >
                             <span className={styles.comName}>{companyName}</span>
-                            <div className={styles.horizontalLine}/>
+                            <div className={styles.horizontalLine} />
                             <p className={styles.comDes}>{companyDesc}</p>
                         </div>
                     </div>
@@ -65,14 +65,17 @@ function HeaderComponent() {
                     <div className={styles.callInfo}>
                         <div className={styles.callLogo}>
                             <MdCall />
-                            <h3 style={{marginBottom:0}}>Tel</h3>
+                            <h3 style={{ marginBottom: 0 }}>Tel</h3>
                         </div>
 
-                        <p style={{margin:0}}>{contactTel}</p>
+                        <p style={{ margin: 0 }}>{contactTel}</p>
+                    </div>
+                    <div className={styles.NavBar}>
+                        <NavBar />
                     </div>
                 </div>
                 <div className={styles.navigations}>
-                     <div className={styles.navLinks}>
+                    <div className={styles.navLinks}>
 
                         <div className={styles.pageLink} >
                             <Link href="/" ><a>HOME</a></Link>
@@ -87,10 +90,9 @@ function HeaderComponent() {
                             <Link href="/contact"><a>CONTACT US</a></Link>
                         </div>
                     </div>
- {/* 
-                    <NavBar/>
-                    <NavScroll/> */}
-              
+
+
+
                 </div>
 
             </section>

@@ -1,12 +1,13 @@
+import Link from 'next/link'
 import React from 'react'
 import { Navbar ,Container ,Offcanvas,Nav } from 'react-bootstrap'
 
 
 function NavBar() {
     return (
-        <Navbar bg="light" expand={false}>
+        <Navbar bg="red" expand={false}>
             <Container fluid>
-                <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+            {/*     <Navbar.Brand href="/">kanak sales corporation</Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
@@ -14,7 +15,7 @@ function NavBar() {
                     placement="end"
                 >
                     <Offcanvas.Header closeButton>
-                        <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
+                        <Offcanvas.Title id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -22,7 +23,7 @@ function NavBar() {
                             <Nav.Link href="/products">Products</Nav.Link>
                             <Nav.Link href="/about">About us</Nav.Link>
                             <Nav.Link href="/contact">Contact us</Nav.Link>
-                            
+                            <Link href="/products"><a>Products</a></Link>
                         </Nav>
                       
                     </Offcanvas.Body>

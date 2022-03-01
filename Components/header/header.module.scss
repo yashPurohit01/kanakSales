@@ -75,6 +75,9 @@
         opacity: 0.6;
       }
     }
+    & .NavBar {
+      display: none;
+    }
     & .callInfo {
       font-size: 1.5rem;
       display: flex;
@@ -91,7 +94,7 @@
     padding: 0.8rem;
     background-color: hsl(5, 71%, 51%);
     color: white;
-    justify-content: center; 
+    justify-content: center;
     & .navLinks {
       display: flex;
       & .pageLink {
@@ -110,15 +113,32 @@
   .headerContainer {
     & .top_section {
       flex-direction: column;
-      & .first_child , & .second_child {
+      & .first_child,
+      & .second_child {
         width: 100%;
-        
       }
     }
-   & .Mid_Section {
-     & .col_two , & .callInfo{
-       display: none;
-     }
+    & .Mid_Section {
+      & .companyLogoInfo {
+        & .companyMainInfo {
+          & .comName {
+            font-size: 1.4rem;
+          }
+          & .comDes {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      & .col_two,
+      & .callInfo {
+        display: none;
+      }
+      & .NavBar{
+        display: block;
+      }
+    }
+    & .navigations {
+      display: none;
     }
   }
 }
