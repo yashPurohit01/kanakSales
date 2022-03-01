@@ -1,10 +1,15 @@
 import React from 'react'
-import ControlledCarousel from '../Components/Caurosel/Caurosel'
+import styles from '../styles/about.module.scss'
+import { BiLastPage } from 'react-icons/bi'
 
 function About() {
   return (
-    <div>
-   
+    <div className={styles.abouts}>
+      <div className={styles.pageHeader}>
+        <BiLastPage />
+        <span>About</span>
+      </div>
+
     </div>
   )
 }

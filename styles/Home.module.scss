@@ -1,5 +1,6 @@
 $maroon: hsl(5, 71%, 51%);
 $yellow: rgb(255, 217, 25);
+
 $grident: linear-gradient(
   90deg,
   rgba(249, 51, 30, 0.9332107843137255) 9%,
@@ -55,11 +56,15 @@ $grident: linear-gradient(
     }
   }
   & .home_second_row {
+    width: 100%;
     display: flex;
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
+    
+    background-image: url('/images/banner02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   & .home_third_row {
     display: flex;
@@ -67,6 +72,7 @@ $grident: linear-gradient(
     justify-content: center;
     background-color: whitesmoke;
     padding: 1rem 0 1rem 0;
+    flex-wrap: wrap;
     cursor: pointer;
     & .ownerImg {
       width: fit-content;
@@ -82,8 +88,9 @@ $grident: linear-gradient(
       }
       & p {
         padding: 1rem;
-        font-weight: 400;
-        text-rendering: geometricPrecision;
+        font-weight: 500;
+        font-family: 'Nunito', sans-serif;
+          
         text-align: center;
       }
       & h3 {
@@ -105,13 +112,13 @@ $grident: linear-gradient(
       display: inline-block;
       display: flex;
       flex-direction: column;
-      width: 20rem;
-      min-width: 20rem;
-      border: 1px solid $maroon;
+      width: 18rem;
+      min-width: 18rem;
+      border: 3px solid $yellow;
       padding: 1rem;
       border-radius: 1rem;
       margin: 1rem;
-      height: 15rem;
+      height: 13rem;
       & h4 {
         font-family: "Roboto Serif", sans-serif;
         text-align: center;
@@ -126,10 +133,60 @@ $grident: linear-gradient(
         text-align: center;
         font-weight: 500;
         opacity: 0.6;
-
         box-sizing: border-box;
+        font-size: 0.8rem;
       }
     }
+  }
+  & .home_brands_informations{
+   /*  border-top: 1px solid rgba(29, 27, 27, 0.183); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .home_brands_informations_heading{
+      background-color: $maroon;
+      color: white;
+      width: 100%;
+      text-align: center;
+    }
+    
+    & .home_brands_content{
+      flex-wrap: wrap-reverse;
+      justify-content: space-evenly;
+      display: flex;
+      width: 100%;
+     & .logo{ 
+   
+      flex-direction: column;
+       & .brand_logo{
+           margin: 1rem;
+       }
+    }
+    & .text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    /*   justify-content: center; */
+      width: 23.5rem;
+      font-size: 1rem;
+      font-family: 'Nunito', sans-serif;
+      text-align: center;
+      & h5{
+        font-family: "Roboto Serif", sans-serif;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.7rem;
+        border-bottom: 5px solid $yellow;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+      & p{
+        margin-top: 1rem;
+      }
+    }
+  }
   }
 }
 

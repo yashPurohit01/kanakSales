@@ -107,3 +107,9 @@ export const reviews = [
         review:"Being a old Customer to kanak Sales Corporation they alway treat me as the same as I was with them 4 year befor"
     }
 ]
+
+export const HomeBrandPromotion = {
+    tittle:"Shark & Gold ",
+    description:" are company Two Brands which  Deals with Stainless Steel Hardware , All were rust free with presize mesurement . Company Products are" ,
+    products: " Pan Slotted Self Tapping Screws ,Pan Phillips Self Tapping Screws ,Pan Phillips Self Drilling Screws , Pan Phillips  Machine Screws ,Slotted Phillips  Machine Screws ,Phillips Wood Screw ,DryWall Screw ."
+}

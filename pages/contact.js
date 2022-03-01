@@ -1,9 +1,14 @@
 import React from 'react'
-import AutoPlay from '../Components/Caurosel/Slider'
+import styles from '../styles/about.module.scss'
+import { BiLastPage } from 'react-icons/bi'
 
 function Contact() {
   return (
-    <div>
+    <div className={styles.abouts}>
+      <div className={styles.pageHeader}>
+        <BiLastPage />
+        <span>Contact Us</span>
+      </div>
 
     </div>
   )
