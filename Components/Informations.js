@@ -113,3 +113,57 @@ export const HomeBrandPromotion = {
     description:" are company Two Brands which  Deals with Stainless Steel Hardware , All were rust free with presize mesurement . Company Products are" ,
     products: " Pan Slotted Self Tapping Screws ,Pan Phillips Self Tapping Screws ,Pan Phillips Self Drilling Screws , Pan Phillips  Machine Screws ,Slotted Phillips  Machine Screws ,Phillips Wood Screw ,DryWall Screw ."
 }
+export const about = {
+   desc:{
+    para1:"Kanak Sales Corporation that has been in busi ness of hardware's (Screws & Nut Bolts) for thepast 30 years.",
+    para2:"We have been an established andpopular company with an excellent track, record for the best customersatisfaction. We have never compromised on the quality and the services provided to the customers. ",
+    para3:"We believe in keeping the customers.happy and providing them with products at a very competent price. ",
+    para4:"Please feel free to keep in touch with us about any of your business related requirements/queries." 
+}, 
+products:[
+        {
+            id:1,
+            name:"S.S. CSK & Pan Slotted Self Tapping Screws",
+            
+        },
+        {
+            id:2,
+            name:"S.S. CSK & Pan Philips Self Tapping Screws ",
+            
+        },
+        {
+            id:3,
+            name:"S.S. CSK & Pan Philips Self Drilling Screws ",
+            
+        },
+        {
+            id:4,
+            name:"S.S. CSK & Pan Slotted Machine Screws",
+            
+        },
+        {
+            id:5,
+            name:"S.S. CSK & Pan Philips Machine Screws ",
+            
+        },
+        {
+            id:6,
+            name:"S.S. CSK Philips Wood Screws",
+            
+        },
+        {
+            id:7,
+            name:"S.S. CSK Slotted Wood Screws",
+            
+        },
+        {
+            id:8,
+            name:"S.S. DryWall Screws",
+            
+        }, {
+            id:9,
+            name:"S.S. CSK Slotted Wood Screws",
+            
+        }, 
+    ]
+}

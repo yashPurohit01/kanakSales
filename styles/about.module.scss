@@ -1,27 +1,91 @@
 $maroon: hsl(5, 71%, 51%);
 $yellow: rgb(255, 217, 25);
+$textlogo: "Playfair Display", serif;
+$secondary: "Roboto Slab", serif;
 
-.abouts{
-    & .pageHeader {
-        /*  background-image: url('/images/products-banner.jpg') ; */
-        /* background-color: hsl(56, 76%, 75%); */
-        background: rgb(249,51,30);
-    background: linear-gradient(90deg, rgba(249,51,30,0.9332107843137255) 9%, rgba(248,138,32,1) 43%, rgba(247,220,34,1) 95%);
-        padding: 5rem;
-        font-size: 2.2rem;
-        display: flex;
-        align-items: center;
-        font-family: "Roboto Serif", sans-serif;
+.abouts {
+  & .pageHeader {
+    background: rgb(249, 51, 30);
+    background: linear-gradient(
+      90deg,
+      rgba(249, 51, 30, 0.9332107843137255) 9%,
+      rgba(248, 138, 32, 1) 43%,
+      rgba(247, 220, 34, 1) 95%
+    );
+    padding: 5rem;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto Serif", sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+  & .about_content_outer_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .about_content_heading {
+      border: 4px Solid $yellow;
+      margin: 1rem 0 1rem 0;
+      padding: 1rem;
+
+      & h3 {
+        font-family: $textlogo;
         font-weight: 600;
-        color: white ;
+        text-transform: uppercase;
+        letter-spacing: 2mm;
+        font-size: 35px;
       }
-      & .productheading{
-          margin: 3rem;
-          width: max-content;
-          & .horizontalrow{
-              border: 3px solid hsl(5, 71%, 51%);
-            
-          }
+      & p {
+        text-align: end;
+        font-size: 1.3rem;
+        font-family: $secondary;
+        font-weight: 600;
+        opacity: 0.6;
       }
-    
+    }
+    & .about_Description {
+        display: flex;
+      font-size: 1.5rem;
+      justify-content: space-evenly;
+      width: 100%;
+      & p{
+          max-width: 30rem;
+          margin: 1rem;
+          font-family: $secondary;
+          font-weight: 500;
+      }
+      & li{
+        font-family: $secondary;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+        list-style:square;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .about_content_outer_div {
+    & .about_content_heading {
+      border: 2px Solid $yellow;
+      margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+      padding: 0.5rem;
+
+      & h3 {
+        color: red;
+
+        letter-spacing: 0.5mm;
+        font-size: 0.5rem;
+      }
+      & p {
+        text-align: end;
+        font-size: 0.7rem;
+        font-family: $secondary;
+        font-weight: 600;
+        opacity: 0.6;
+      }
+    }
+  }
 }

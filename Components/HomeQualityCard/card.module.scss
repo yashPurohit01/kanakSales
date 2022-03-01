@@ -62,7 +62,10 @@ $yellow: rgb(255, 217, 25);
 
              }
              & .card_inner_content{
-                 
+                 & .cardItems{
+                     margin: 0.8rem;
+                     
+                 }
              }
         }
     }
