@@ -23,7 +23,7 @@ function NavBar() {
                             <Nav.Link href="/products">Products</Nav.Link>
                             <Nav.Link href="/about">About us</Nav.Link>
                             <Nav.Link href="/contact">Contact us</Nav.Link>
-                            <Link href="/products"><a>Products</a></Link>
+                            
                         </Nav>
                       
                     </Offcanvas.Body>
