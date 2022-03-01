@@ -50,6 +50,7 @@ $secondary: "Roboto Slab", serif;
       font-size: 1.5rem;
       justify-content: space-evenly;
       width: 100%;
+      flex-wrap: wrap-reverse;
       & p{
           max-width: 30rem;
           margin: 1rem;

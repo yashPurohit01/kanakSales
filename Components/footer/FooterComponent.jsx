@@ -23,6 +23,7 @@ function FooterComponent() {
             <p>{description}</p>
             <h3>Company Brands</h3>
             <Image src="/images/companylogo.png" alt='logo' width="60" height="60" />
+            <Image src="/images/SHARK.png" height="80" width="100" alt="logo" />
           </div>
         </div>
         <div className={styles.contact}>
