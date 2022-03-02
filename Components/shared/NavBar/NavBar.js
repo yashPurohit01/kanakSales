@@ -19,7 +19,7 @@ function NavBar() {
                         <Offcanvas.Title id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body   className={styles.navbarBody} >
-                        <Nav className="justify-content-end flex-grow-1 pe-3">
+                        <Nav>
                             <Link href="/"><a>Home</a></Link>
                             <Link href="/products"><a>Products</a></Link>
                             <Link href="/about"><a>About </a></Link>

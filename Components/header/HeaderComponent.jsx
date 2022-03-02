@@ -8,6 +8,7 @@ import { MdCall } from 'react-icons/md'
 import { RiSettings6Fill } from 'react-icons/ri'
 import Image from 'next/image'
 import NavBar from '../shared/NavBar/NavBar'
+import DropDownNavBar from '../shared/NavBar/DropDownNavBar'
 
 
 
@@ -62,18 +63,22 @@ function HeaderComponent() {
                         </div>
 
                     </div>
-                    <div className={styles.callInfo}>
+                   {/*  <div className={styles.callInfo}>
                         <div className={styles.callLogo}>
                             <MdCall />
                             <h3 style={{ marginBottom: 0 }}>Tel</h3>
                         </div>
 
                         <p style={{ margin: 0 }}>{contactTel}</p>
-                    </div>
+                    </div> */}
                     <div className={styles.NavBar}>
-                        <NavBar />
+                         <NavBar /> 
+             
                     </div>
                 </div>
+               {/*  <div>
+                <DropDownNavBar/>
+                </div> */}
                 <div className={styles.navigations}>
                     <div className={styles.navLinks}>
 
