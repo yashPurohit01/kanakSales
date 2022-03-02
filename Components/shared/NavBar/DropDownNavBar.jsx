@@ -5,12 +5,12 @@ import styles from './dropdown.module.scss'
 
 function DropDownNavBar() {
     return (
-        <Navbar  expand="lg" className={styles.dropDown} >
+        <Navbar  expand="lg" className={styles.DropdownContainer} >
             <Container className={styles.dropDown}>
-                <Navbar.Brand href="/">Kanak Sales Corporation</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="">
+                
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.navIcon} />
+                <Navbar.Collapse id="basic-navbar-nav" className={styles.navs}>
+                    <Nav className={styles.links}>
 
                         <Link href="/"><a>Home</a></Link>
                         <Link href="/products"><a>Products</a></Link>

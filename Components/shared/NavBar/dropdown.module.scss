@@ -1,8 +1,36 @@
 $maroon: hsl(5, 71%, 51%);
 $yellow: rgb(255, 217, 25);
 
-
-.dropDown{
+.DropdownContainer{
+    background-color: $maroon;
+& .dropDown{
     background-color: $maroon;
     width: 100%;
+    display: flex;
+    justify-content: flex-end !important;
+    & a{
+        text-decoration: none;
+         font-size: 1.2rem;
+         letter-spacing: 0.5mm;
+        font-weight: 500;
+        color: white;
+        margin: 1rem;
+        text-transform: uppercase;
+        font-family: "Lora", serif;
+    }
+    & .navIcon {
+        border: 5px solid $yellow !important ;
+        color: black;
+    /*     margin-bottom: 0.5rem; */
+        
+      }
+      & .navIcon:focus{
+        border: none;
+        box-shadow: none;
+      }
+      & .navs{
+          background-color: $maroon;
+          justify-content: center;
+      }
+}
 }

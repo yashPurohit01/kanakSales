@@ -63,23 +63,23 @@ function HeaderComponent() {
                         </div>
 
                     </div>
-                   {/*  <div className={styles.callInfo}>
+                   <div className={styles.callInfo}>
                         <div className={styles.callLogo}>
                             <MdCall />
                             <h3 style={{ marginBottom: 0 }}>Tel</h3>
                         </div>
 
                         <p style={{ margin: 0 }}>{contactTel}</p>
-                    </div> */}
-                    <div className={styles.NavBar}>
+                    </div> 
+            {/*         <div className={styles.NavBar}>
                          <NavBar /> 
              
-                    </div>
+                    </div> */}
                 </div>
-               {/*  <div>
+                 <div className={styles.NavDropDown}>
                 <DropDownNavBar/>
-                </div> */}
-                <div className={styles.navigations}>
+                </div> 
+                {/* <div className={styles.navigations}>
                     <div className={styles.navLinks}>
 
                         <div className={styles.pageLink} >
@@ -98,7 +98,7 @@ function HeaderComponent() {
 
 
 
-                </div>
+                </div> */}
 
             </section>
         </div>
