@@ -6,9 +6,8 @@ import styles from './navbar.module.scss'
 function NavBar() {
     return (
         <Navbar bg="red" expand={false} >
-            <Container fluid>
-            {/*     <Navbar.Brand href="/">kanak sales corporation</Navbar.Brand> */}
-                <Navbar.Toggle aria-controls="offcanvasNavbar"   />
+            <Container fluid className={styles.navContainer}>
+                <Navbar.Toggle aria-controls="offcanvasNavbar" className={styles.navIcons}  />
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel"

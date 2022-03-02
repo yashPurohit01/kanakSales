@@ -1,21 +1,34 @@
+$maroon:  hsl(5, 71%, 51%);
+$yellow:rgb(255, 221, 53);
 
+ .navbarSideBar {
+    width: 250px;
 
-.navbarSideBar{
-   width: 250px;
+    & .navbarBody {
+      background-color: rgb(255, 255, 178);
+      & a {
+        text-decoration: none;
+
+        font-weight: 600;
+        color: black;
+        margin: 1rem;
+        font-family: "Lora", serif;
+      }
+    }
+    & .navbarHead {
+      color: white;
+      background-color: hsl(5, 71%, 51%);
+    }
+  }
    
-   & .navbarBody{
-       background-color: rgb(255, 255, 178);
-       & a{
-           text-decoration: none;
-           font-size: 1.5rem;
-           font-weight: 600;
-           color: black;
-           margin: 1rem;
-           font-family: 'Lora', serif;
-       }
-   }
-   & .navbarHead{
-       color: white;
-       background-color: hsl(5, 71%, 51%);;
-   }
+.navContainer {
+  & .navIcons {
+    border: 5px solid $yellow !important ;
+    color: black;
+    
+  }
+  & .navIcons:focus{
+    border: none;
+    box-shadow: none;
+  }
 }
