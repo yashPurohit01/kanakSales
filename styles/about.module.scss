@@ -4,6 +4,7 @@ $textlogo: "Playfair Display", serif;
 $secondary: "Roboto Slab", serif;
 
 .abouts {
+
   & .pageHeader {
     background: rgb(249, 51, 30);
     background: linear-gradient(
@@ -26,7 +27,7 @@ $secondary: "Roboto Slab", serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.8rem;
     & .about_content_heading {
       border: 4px Solid $yellow;
       margin: 1rem 0 1rem 0;
@@ -69,11 +70,17 @@ $secondary: "Roboto Slab", serif;
         margin-bottom: 0.5rem;
         margin-top: 1rem;
         list-style: square;
+        list-style: none;
+        margin-left: .5rem;
+      }
+      & li::before {
+        color: $yellow;
       }
       & h4{
         font-family: $secondary;
         font-size: 2rem;
         font-weight: 700;
+        color:$maroon; 
       }
     }
   }

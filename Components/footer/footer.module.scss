@@ -10,9 +10,9 @@ $secondary: "Roboto Slab", serif;
     padding-top: 2rem;
     display: flex;
     display: flex;
-    justify-content: center;
-    gap: 7rem;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 2rem;
 
     & .companyInfo {
       width: 24rem;
@@ -69,12 +69,20 @@ $secondary: "Roboto Slab", serif;
         word-break: break-all;
       }
       & .info {
-        display: flex;
-        align-items: center;
-        margin-top: 0.5rem;
-      }
-    }
+        display: inline-flex;
 
+        margin-top: 0.5rem;
+        & p{
+          text-align: start;
+        }
+      }
+      & .info:nth-child(1){
+        width: 10rem;
+        color: red;
+      }
+      
+    }
+   
     & .quickLinks {
       /*  opacity: 0.6; */
       display: flex;

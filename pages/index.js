@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ControlledCarousel from '../Components/Caurosel/Caurosel'
+import ControlledCarousel from '../Components/shared/Caurosel/Caurosel'
 import { BsCheck2Square } from 'react-icons/bs'
 import { AiFillSafetyCertificate } from 'react-icons/ai'
 import styles from '../styles/Home.module.scss'
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       {/*  <AutoPlay/>  */}
-      <ControlledCarousel />
+      <ControlledCarousel/>
 
       <div className={styles.home_first_row}>
         <div className={styles.home_info_card}>

@@ -29,9 +29,10 @@ function FooterComponent() {
         <div className={styles.contact}>
           <h3>Contact Information</h3>
           <div className={styles.hr} />
+
           <div className={styles.info}>
-            <BiCurrentLocation />
-            <p className={styles.location}>{location}</p>
+              <BiCurrentLocation />
+            <p className={styles.location}> {location}</p>
           </div>
           <div className={styles.info}>
             <MdCall />

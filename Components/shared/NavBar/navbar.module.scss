@@ -1,0 +1,21 @@
+
+
+.navbarSideBar{
+   width: 250px;
+   
+   & .navbarBody{
+       background-color: rgb(255, 255, 178);
+       & a{
+           text-decoration: none;
+           font-size: 1.5rem;
+           font-weight: 600;
+           color: black;
+           margin: 1rem;
+           font-family: 'Lora', serif;
+       }
+   }
+   & .navbarHead{
+       color: white;
+       background-color: hsl(5, 71%, 51%);;
+   }
+}
