@@ -8,7 +8,7 @@ import { MdCall } from 'react-icons/md'
 import { RiSettings6Fill } from 'react-icons/ri'
 import Image from 'next/image'
 import NavBar from './NavBar'
-import NavScroll from './NavScroll'
+
 
 
 function HeaderComponent() {

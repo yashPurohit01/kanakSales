@@ -1,17 +1,16 @@
 import Image from 'next/image'
 import ControlledCarousel from '../Components/Caurosel/Caurosel'
-import AutoPlay from '../Components/Caurosel/Slider'
-import { GrCertificate } from 'react-icons/gr';
+import { BsCheck2Square } from 'react-icons/bs'
 import { AiFillSafetyCertificate } from 'react-icons/ai'
 import styles from '../styles/Home.module.scss'
-import { GeneralInformation, HomeBrandPromotion, reviews, vision } from '../Components/Informations';
+import { GeneralInformation, HomeBrandPromotion, HomeQuanlityCard, reviews, vision } from '../Components/Informations';
 import { FiCheckCircle } from 'react-icons/fi'
 import { FaHandshake } from 'react-icons/fa'
 import QualityCard from '../Components/HomeQualityCard/QualityCard';
 
 export default function Home() {
 
-  const { description } = GeneralInformation
+  const { description ,contactTel } = GeneralInformation
   const { des } = vision
   return (
     <div className={styles.container}>
@@ -45,14 +44,36 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.home_second_row}>
-        <div>
-          <div>
-            <QualityCard />
-          </div>
-          {/*  <Image alt="img" src="/images/banner02.jpg" height="600" width="1600" /> */}
 
+        <div className={styles.card}>
+          <QualityCard />
+        </div> 
+    {/*  */}
+        
+        <div className={styles.inner_heading}>
+                    <h2>Assurance with our Product</h2>
+                    <div className={styles.inner_content}>
+                        {HomeQuanlityCard.map(content => {
+                            return (
+                                <div key={content.id} className={styles.cardItems}>
+                                    <div className={styles.logo}>
+                                        <BsCheck2Square />
+                                    </div>
+                                    <p>{content.des}</p>
+                                </div>
+                            )
+                        })
+
+                        }
+
+                    </div>
+                    <button className={styles.cardbttn}>
+                        Call {contactTel}
+                    </button>
+                </div>
         </div>
-      </div>
+      
+
       <div className={styles.home_brands_informations}>
         {/* <div className={styles.home_brands_informations_heading}>
           <h3>Company Two Popular Brand </h3>
@@ -90,7 +111,7 @@ export default function Home() {
           <strong>"</strong>
         </div>
       </div>
-      <div className={styles.home_review_row}>
+      {/*  <div className={styles.home_review_row}>
         {
           reviews.map(review => {
             return (
@@ -105,7 +126,7 @@ export default function Home() {
             )
           })
         }
-      </div>
+      </div> */}
     </div>
   )
 }

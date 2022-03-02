@@ -58,20 +58,29 @@ $grident: linear-gradient(
   & .home_second_row {
     width: 100%;
     display: flex;
-    justify-self: center;
-    align-items: center;
-    flex-direction: column;
-    
+    justify-content: center;
+    align-items: center; 
+    padding: 1rem 0 1rem 0;
     background-image: url('/images/banner02.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
+   & .glory {
+         & h3{
+           border: 2px solid rgb(251, 186, 21);
+           border-radius: 5rem;
+           padding: 2rem;
+           background-color: goldenrod;
+           font-size: 3rem;
+         }
+    }
   }
   & .home_third_row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: whitesmoke;
-    padding: 1rem 0 1rem 0;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
     flex-wrap: wrap;
     cursor: pointer;
     & .ownerImg {
@@ -82,16 +91,18 @@ $grident: linear-gradient(
       height: min-content;
     }
     & .vision_desc {
-      width: 30rem;
+      max-width: 28rem;
+      padding-left: 1rem;
       & strong {
         font-family: "Permanent Marker", cursive;
       }
       & p {
-        padding: 1rem;
-        font-weight: 500;
+        padding: 0.6rem;
+        font-weight: 600;
         font-family: 'Nunito', sans-serif;
+        letter-spacing: 0.2mm;
           
-        text-align: center;
+   /*      text-align: center; */
       }
       & h3 {
         text-align: center;
@@ -144,6 +155,7 @@ $grident: linear-gradient(
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1.2rem;
 
     & .home_brands_informations_heading{
       background-color: $maroon;
@@ -169,10 +181,11 @@ $grident: linear-gradient(
       flex-direction: column;
       align-items: center;
     /*   justify-content: center; */
-      width: 23.5rem;
+      max-width: 23.5rem;
       font-size: 1rem;
       font-family: 'Nunito', sans-serif;
-      text-align: center;
+     /*  text-align: center; */
+     padding:.6rem;
       & h5{
         font-family: "Roboto Serif", sans-serif;
         text-align: center;
@@ -190,10 +203,65 @@ $grident: linear-gradient(
   }
 }
 
+
+  .inner_heading{
+    display: none;
+      text-align: center;
+      color: white;
+      padding: 1rem;
+  & .inner_content{
+      & .cardItems{
+          display: flex;
+          align-items: center;
+          font-size: 1.2rem;
+          margin: 1rem;
+          & p{
+          margin-bottom: 0;
+          text-align: center;
+          margin-left: 1rem ;
+          font-weight: 600;
+          font-family: 'Roboto Serif', sans-serif;
+          }
+      }
+      & .cardItems > div{
+          color: green;
+          font-weight: 1000;
+          font-size: 2rem;
+      }
+  }
+  & h2{
+      margin: 0 2rem 0 2rem;
+  }
+  & .cardbttn{
+      background-color: $yellow;
+      padding: 0.6rem;
+      border-radius: .3rem;
+      border: none;
+      font-weight: 600;
+  }
+}
+
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .text{
+    & h5{
+      font-size: 0.2rem;
+      color:red
+    }
+  }
+  .inner_heading{
+    display: block;
+  }
+  .home_second_row{
+    & .card{
+      display: none;
+    }
   }
 }
 .home_review_row::-webkit-scrollbar {

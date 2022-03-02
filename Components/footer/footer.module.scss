@@ -1,7 +1,9 @@
+$secondary: "Roboto Slab", serif;
 .footer {
   background-color: rgb(38, 37, 35);
   display: flex;
   flex-direction: column;
+  padding:1rem;
   & .footerContainer {
     color: white;
     padding: 1rem;
@@ -9,27 +11,34 @@
     display: flex;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 7rem;
     flex-wrap: wrap;
 
     & .companyInfo {
-      width: 17rem;
+      width: 24rem;
       & .companyMainInfo {
         margin-left: 0.4rem;
         & .comDes {
           font-size: 0.8rem;
           font-weight: 200;
+           font-family: $secondary;
           /*  opacity: 0.5; */
+          padding-top: 2px;         
         }
         & .comName {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           font-weight: 300;
           font-family: "Playfair Display", serif;
+          border-bottom:1px solid white ;
+          padding-bottom: 3px;
+          text-transform: uppercase;
+          letter-spacing: 0.5mm;
+          text-align: end;
         }
-        & .horizontalLine {
-          border: 1px solid white;
-          /*  opacity: 0.6; */
-        }
+/*         & .horizontalLine {
+          border: ;
+          opacity: 0.6; 
+        } */
       }
       & .para {
         font-family: "Poppins", sans-serif;
