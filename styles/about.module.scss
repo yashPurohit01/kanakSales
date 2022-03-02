@@ -13,6 +13,7 @@ $secondary: "Roboto Slab", serif;
       rgba(247, 220, 34, 1) 95%
     );
     padding: 5rem;
+    padding-left: 1rem;
     font-size: 2.2rem;
     display: flex;
     align-items: center;
@@ -25,12 +26,12 @@ $secondary: "Roboto Slab", serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: .5rem;
+    padding: 0.5rem;
     & .about_content_heading {
       border: 4px Solid $yellow;
       margin: 1rem 0 1rem 0;
       padding: 1rem;
-
+     
       & h3 {
         font-family: $textlogo;
         font-weight: 600;
@@ -47,24 +48,32 @@ $secondary: "Roboto Slab", serif;
       }
     }
     & .about_Description {
-        display: flex;
+      display: flex;
       font-size: 1.5rem;
       justify-content: space-evenly;
       width: 100%;
       flex-wrap: wrap-reverse;
-      padding: 1.2rem;
-      & p{
-          max-width: 30rem;
-          margin: 1rem;
-          font-family: $secondary;
-          font-weight: 500;
+      /* padding: 1.2rem; */
+      & p {
+        max-width: 30rem;
+        margin: 1rem;
+        font-family: $secondary;
+        font-weight: 500;
+        font-size: 1.2rem;
+        letter-spacing: 0.5mm;
       }
-      & li{
+      & li {
         font-family: $secondary;
         font-size: 1.2rem;
         font-weight: 600;
-        margin-bottom: .5rem;
-        list-style:square;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        list-style: square;
+      }
+      & h4{
+        font-family: $secondary;
+        font-size: 2rem;
+        font-weight: 700;
       }
     }
   }
