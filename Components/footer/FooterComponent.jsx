@@ -29,6 +29,7 @@ function FooterComponent() {
         <div className={styles.contact}>
           <h3>Contact Information</h3>
           <div className={styles.hr} />
+          <div className={styles.contact_container}>
 
           <div className={styles.info}>
               <BiCurrentLocation />
@@ -41,6 +42,7 @@ function FooterComponent() {
           <div className={styles.info}>
             <IoMdMailUnread />
             <p className={styles.location}>{email}</p>
+          </div>
           </div>
         </div>
         <div className={styles.quickLinks}>

@@ -8,7 +8,7 @@ export const GeneralInformation = {
     email: "kanaksalescorporation@gmail.com",
     contactTel: "+91-33-22106372",
     contactMob: " 9836995399 / 7278365801",
-    description: "Kanak Sales Corporation is business of hardware (Screws & Nut and Bolts) for last 30 years. We have been an established and popular company with excellent track record of Best Customer satisfaction"
+    description: "Kanak Sales Corporation is in the business of hardware (Screws & Nut and Bolts) for last 30 years. We have been an established and popular company with excellent track record of Best Customer satisfaction"
 }
 
 export const ProductsInformations = [
@@ -116,8 +116,8 @@ export const HomeBrandPromotion = {
 export const about = {
    desc:{
     para1:"Kanak Sales Corporation that has been in busi ness of hardware's (Screws & Nut Bolts) for thepast 30 years.",
-    para2:"We have been an established andpopular company with an excellent track, record for the best customersatisfaction. We have never compromised on the quality and the services provided to the customers. ",
-    para3:"We believe in keeping the customers.happy and providing them with products at a very competent price. ",
+    para2:"We have been an established and popular company with an excellent track, record for the best customersatisfaction. We have never compromised on the quality and the services provided to the customers. ",
+    para3:"We believe in keeping the customers happy and providing them with products at a very competent price. ",
     para4:"Please feel free to keep in touch with us about any of your business related requirements/queries." 
 }, 
 products:[
@@ -167,3 +167,36 @@ products:[
         }, 
     ]
 }
+
+export const AboutPage = [
+    {
+        id:1,
+        title:"Kanak Sales Corporation",
+        desc:"Kanak Sales Corporation is in the business of hardware (Screws & Nut and Bolts) for last 30 years. We have been an established and popular company with excellent track record of Best Customer satisfaction",
+        Imagepath:"/images/factory.jpg",
+        width:"700",
+        height:"350",
+
+    }
+    ,{
+        id:2,
+        title:"",
+        desc:"Being 30 year old comapny we have never compromised on the quality and the services provided to the customers. We believe in keeping the customers happy and providing them with products at a very competent price. ",
+        Imagepath: "/images/screwmachine.jpg" ,
+        width:"700",
+        height:"300",
+
+
+    },
+    {
+        id:3,
+        title:"Company Products",
+        desc:"Company Products are Pan Slotted Self Tapping Screws ,Pan Phillips Self Tapping Screws ,Pan Phillips Self Drilling Screws , Pan Phillips  Machine Screws ,Slotted Phillips  Machine Screws ,Phillips Wood Screw ,DryWall Screw all are built with stainless Steel . ",
+        Imagepath: "/images/screwsAbout.jpg" ,
+        width:"700",
+        height:"400",
+
+        
+    }
+    ,
+]
