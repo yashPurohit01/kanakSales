@@ -20,3 +20,7 @@ a {
   box-sizing: border-box;
 }
 
+.leaflet-contianer{
+  width: 100%;
+  height: 400rem;
+}

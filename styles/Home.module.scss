@@ -207,7 +207,8 @@ $grident: linear-gradient(
   .inner_heading{
     display: none;
       text-align: center;
-      color: white;
+      color: black;
+      font-weight: 800;
       padding: 1rem;
   & .inner_content{
       & .cardItems{
@@ -219,7 +220,7 @@ $grident: linear-gradient(
           margin-bottom: 0;
           text-align: center;
           margin-left: 1rem ;
-          font-weight: 600;
+          font-weight: 1000;
           font-family: 'Roboto Serif', sans-serif;
           }
       }

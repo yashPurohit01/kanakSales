@@ -19,15 +19,13 @@ function About() {
             <h3>{companyName}</h3>
             <p>-{companyDesc}</p>
           </div>
-
-
         </div>
         <div className={styles.all_info}>
           {
             AboutPage.map(info => {
               return (
                 <div key={info.id} className={styles.about_info_blobs}>
-                  <Image src={info.Imagepath} height={info.height} width={info.width} />
+                  <Image src={info.Imagepath} alt="img" height={info.height} width={info.width} />
                   <div className={styles.info_content}>
                     <h3>{info.title}</h3>
                     <p>{info.desc}</p>

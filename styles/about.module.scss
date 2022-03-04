@@ -152,7 +152,38 @@ $secondary: "Roboto Slab", serif;
         opacity: 0.6;
       }
     }
+    & .all_info {
+    & .about_info_blobs{
+
+      & .about_info_blobs:nth-child(odd){
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        & p{
+          font-size: 1.3rem;
+          font-weight: 600;
+         text-align:start;
+          letter-spacing: 0.5mm;
+          margin-top: 1rem;
+        }
+      }
+    & .about_info_blobs:nth-child(even){
+       
+        & p{
+          font-size: 1.6rem;
+          font-weight: 600;
+          max-width: 32rem;
+          letter-spacing: 0.4mm;
+          line-height: 10mm;
+          text-align: center;
+        }
+      }
+    }
   }
+  }
+
+
+  
 }
 
 
