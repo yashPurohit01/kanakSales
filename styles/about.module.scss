@@ -75,11 +75,9 @@ $secondary: "Roboto Slab", serif;
           margin-top: 2rem;
           & h3{
             font-weight: 600;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
           }
-          & p{
          
-          }
         }
       }
 
@@ -93,6 +91,7 @@ $secondary: "Roboto Slab", serif;
        text-align: justify;
         letter-spacing: 0.5mm;
         margin-top: 1rem;
+        line-height: 8mm;
       }
     }
     & .about_info_blobs:nth-child(even){
