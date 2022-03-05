@@ -88,7 +88,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.text}>
-            <h5>Kanak Sales Corporation</h5>
+            <span>Kanak Sales Corporation</span>
             <p>
               <strong>{HomeBrandPromotion.tittle}</strong>
               {HomeBrandPromotion.description}

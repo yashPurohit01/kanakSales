@@ -3,6 +3,9 @@ import styles from '../styles/contact.module.scss'
 import { BiLastPage } from 'react-icons/bi'
 import Image from 'next/image' 
 import { GeneralInformation } from '../Components/Informations'
+import { GrMapLocation} from 'react-icons/bi'
+
+
 
 function Contact() {
   
@@ -14,7 +17,14 @@ function Contact() {
         <BiLastPage />
         <span>Contact Us</span>
       </div>
-      
+      <div>
+        <div>
+          <GrMapLocation/>
+          <div>
+            <p></p>
+          </div>
+        </div>
+      </div>
      
       <div className={styles.location}>
         <Image src="/images/location.png" alt="location" height="800" width="1500"/>
