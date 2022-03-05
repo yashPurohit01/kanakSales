@@ -84,6 +84,7 @@ $grident: linear-gradient(
     padding: 1.5rem 1.5rem 1rem 1.5rem;
     flex-wrap: wrap;
     cursor: pointer;
+    gap:2.2rem;
     & .ownerImg {
       width: fit-content;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -93,7 +94,7 @@ $grident: linear-gradient(
     }
     & .vision_desc {
       max-width: 28rem;
-      padding-left: 2.5rem;
+      margin-top: 1rem;
       & strong {
         font-family: "Permanent Marker", cursive;
       }

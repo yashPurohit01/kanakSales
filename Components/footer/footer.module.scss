@@ -9,7 +9,6 @@ $secondary: "Roboto Slab", serif;
     padding: 1rem;
     padding-top: 2rem;
     display: flex;
-    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2rem;
@@ -22,7 +21,6 @@ $secondary: "Roboto Slab", serif;
           font-size: 0.8rem;
           font-weight: 200;
            font-family: $secondary;
-          /*  opacity: 0.5; */
           padding-top: 2px;         
         }
         & .comName {
@@ -35,16 +33,11 @@ $secondary: "Roboto Slab", serif;
           letter-spacing: 0.5mm;
           text-align: end;
         }
-/*         & .horizontalLine {
-          border: ;
-          opacity: 0.6; 
-        } */
       }
       & .para {
         font-family: "Poppins", sans-serif;
         line-height: 5mm;
         font-size: 0.8rem;
-        /*  opacity: 0.7; */
         padding-left: 1rem;
         word-spacing: 0.6mm;
         & p{
@@ -54,13 +47,11 @@ $secondary: "Roboto Slab", serif;
     }
 
     & .contact {
-      margin: 0 1rem 0 1rem;
+   /*    margin: 0 1rem 0 1rem; */
       display: flex;
       flex-direction: column;
-      align-items: center;
-      /*  opacity: 0.6; */
-
-      /* ustify-content: center; */
+/*       align-items: center; */
+    
      & .contact_container{
        display: flex;
        flex-direction: column;

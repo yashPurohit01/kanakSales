@@ -4,7 +4,7 @@ export const GeneralInformation = {
     timeLaps: "30 years",
     date: "1992",
     companyDesc: "manufactures & wholesalers of screws and nuts",
-    location: "83,N.S Road 1st floor,kolkata-700001 West-Bengal,India",
+    location: "83, N.S Road 1st floor, kolkata-700001 West-Bengal, India",
     email: "kanaksalescorporation@gmail.com",
     contactTel: "+91-33-22106372",
     contactMob: " 9836995399 / 7278365801",
@@ -104,14 +104,14 @@ export const reviews = [
     {
         id:4 ,
         name:"Anurag Jindal" ,
-        review:"Being a old Customer to kanak Sales Corporation they alway treat me as the same as I was with them 4 year befor"
+        review:"Being a old Customer to kanak Sales Corporation they alway treat me as the same as I was with them 4 year before"
     }
 ]
 
 export const HomeBrandPromotion = {
     tittle:"Shark & Gold ",
-    description:" are company Two Brands which  Deals with Stainless Steel Hardware , All were rust free with presize mesurement . Company Products are" ,
-    products: " Pan Slotted Self Tapping Screws ,Pan Phillips Self Tapping Screws ,Pan Phillips Self Drilling Screws , Pan Phillips  Machine Screws ,Slotted Phillips  Machine Screws ,Phillips Wood Screw ,DryWall Screw ."
+    description:" are company Two Brands which  Deals with Stainless Steel Hardware, All were rust free with presize mesurement. Company Products are" ,
+    products: " Pan Slotted Self Tapping Screws, Pan Phillips Self Tapping Screws, Pan Phillips Self Drilling Screws, Pan Phillips  Machine Screws, Slotted Phillips  Machine Screws, Phillips Wood Screw, DryWall Screw."
 }
 export const about = {
    desc:{
@@ -123,46 +123,46 @@ export const about = {
 products:[
         {
             id:1,
-            name:"S.S. CSK & Pan Slotted Self Tapping Screws",
+            name:"S.S.CSK & Pan Slotted Self Tapping Screws",
             
         },
         {
             id:2,
-            name:"S.S. CSK & Pan Philips Self Tapping Screws ",
+            name:"S.S.CSK & Pan Philips Self Tapping Screws ",
             
         },
         {
             id:3,
-            name:"S.S. CSK & Pan Philips Self Drilling Screws ",
+            name:"S.S.CSK & Pan Philips Self Drilling Screws ",
             
         },
         {
             id:4,
-            name:"S.S. CSK & Pan Slotted Machine Screws",
+            name:"S.S.CSK & Pan Slotted Machine Screws",
             
         },
         {
             id:5,
-            name:"S.S. CSK & Pan Philips Machine Screws ",
+            name:"S.S.CSK & Pan Philips Machine Screws ",
             
         },
         {
             id:6,
-            name:"S.S. CSK Philips Wood Screws",
+            name:"S.S.CSK Philips Wood Screws",
             
         },
         {
             id:7,
-            name:"S.S. CSK Slotted Wood Screws",
+            name:"S.S.CSK Slotted Wood Screws",
             
         },
         {
             id:8,
-            name:"S.S. DryWall Screws",
+            name:"S.S.DryWall Screws",
             
         }, {
             id:9,
-            name:"S.S. CSK Slotted Wood Screws",
+            name:"S.S.CSK Slotted Wood Screws",
             
         }, 
     ]
