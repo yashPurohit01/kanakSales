@@ -7,7 +7,6 @@ import { GeneralInformation } from '../Informations'
 import { MdCall } from 'react-icons/md'
 import { RiSettings6Fill } from 'react-icons/ri'
 import Image from 'next/image'
-import NavBar from '../shared/NavBar/NavBar'
 import DropDownNavBar from '../shared/NavBar/DropDownNavBar'
 
 
@@ -71,10 +70,7 @@ function HeaderComponent() {
 
                         <p style={{ margin: 0 }}>{contactTel}</p>
                     </div> 
-            {/*         <div className={styles.NavBar}>
-                         <NavBar /> 
-             
-                    </div> */}
+         
                 </div>
                  <div className={styles.NavDropDown}>
                 <DropDownNavBar/>

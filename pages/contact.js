@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from '../styles/contact.module.scss'
-import { BiLastPage } from 'react-icons/bi'
+import { BiLastPage  } from 'react-icons/bi'
 import Image from 'next/image' 
 import { GeneralInformation } from '../Components/Informations'
-import { GrMapLocation} from 'react-icons/bi'
+import { GrMapLocation} from 'react-icons/gr'
 
 
 
