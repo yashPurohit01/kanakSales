@@ -191,7 +191,7 @@ export const AboutPage = [
     {
         id:3,
         title:"Company Products",
-        desc:"Company Products are Pan Slotted Self Tapping Screws ,Pan Phillips Self Tapping Screws ,Pan Phillips Self Drilling Screws , Pan Phillips  Machine Screws ,Slotted Phillips  Machine Screws ,Phillips Wood Screw ,DryWall Screw all are built with stainless Steel . ",
+        desc:"Company Products are Pan Slotted Self Tapping Screws, Pan Phillips Self Tapping Screws, Pan Phillips Self Drilling Screws, Pan Phillips  Machine Screws, Slotted Phillips  Machine Screws, Phillips Wood Screw, DryWall Screw all are built with stainless Steel. ",
         Imagepath: "/images/screwsAbout.jpg" ,
         width:"700",
         height:"400",
