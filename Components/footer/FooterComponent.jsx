@@ -31,8 +31,10 @@ function FooterComponent() {
           </div>
         </div>
         <div className={styles.contact}>
-          <h3>Contact Information</h3>
+          <h3>Contact Information
           <div className={styles.hr} />
+          </h3>
+         
           <div className={styles.contact_container}>
 
             <div className={styles.info}>
@@ -61,8 +63,10 @@ function FooterComponent() {
           </div>
         </div>
         <div className={styles.quickLinks}>
-          <h3>Quick Links</h3>
+          <h3>Quick Links
           <div className={styles.hr} />
+          </h3>
+          
           <div className={styles.navLinks}>
 
             <div className={styles.pageLink} >

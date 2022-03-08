@@ -11,7 +11,7 @@ $secondary: "Roboto Slab", serif;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
 
     & .companyInfo {
       width: 24rem;
@@ -54,7 +54,10 @@ $secondary: "Roboto Slab", serif;
       display: flex;
       flex-direction: column;
       /*       align-items: center; */
+      & h3{
+        width: max-content;
 
+      }
       & .contact_container {
         display: flex;
         flex-direction: column;
@@ -136,7 +139,7 @@ $secondary: "Roboto Slab", serif;
 }
 .hr {
   border: 3px solid rgb(239, 202, 18);
-  width: 6rem;
+  width: 100%;
   background-color: rgb(239, 202, 18);
   border-radius: 4px;
 }

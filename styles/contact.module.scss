@@ -58,7 +58,7 @@ $secondary: "Roboto Slab", serif;
           background-color: $yellow;
           flex-direction: column;
           width: max-content;
-          max-width: 30rem;
+          max-width: 33rem;
           margin: 1rem;
           align-items: center;
           padding: 1rem;
@@ -72,13 +72,44 @@ $secondary: "Roboto Slab", serif;
             padding: .7rem;
             border-radius: 2rem;
           }
-          & p{
+          & .info_contact_div{
             width: 20rem;
+           
+            & h5{
+              font-size: 1.2rem;
+              font-weight: 500;
+              height: max-content;
+            }
+            & p{
+              margin-bottom: 0;
+              font-weight: 600;
+              font-weight: $secondary;
+              font-size: 1.2rem;
+              & li{
+                list-style:square;
+              }
+            }
+            & h6{
+              
+              margin-left: 0;
+              
+              opacity: 0.7;
+            }
+          }
+         
+         }
+           & .info_container:nth-child(3){
+          &  p{
             text-align: center;
-            font-weight: $secondary;
-            font-size: 1.5rem;
           }
          }
+         & .info_container:nth-child(2) {
+           & p{
+             font-size: 1.2rem;
+             font-weight: 500;
+           }
+         }
+
         
         
       }

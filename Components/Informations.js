@@ -254,3 +254,8 @@ export const Aboutproduct = {
 
     
 }
+export const ContactPerson = [ {
+    name: "Responsible Person" ,
+    number:"9874474439 " ,
+}
+]

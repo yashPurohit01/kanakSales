@@ -2,10 +2,10 @@ import React from 'react'
 import styles from '../styles/contact.module.scss'
 import { BiLastPage } from 'react-icons/bi'
 import Image from 'next/image'
-import { GeneralInformation } from '../Components/Informations'
-import { FaMapMarkerAlt} from 'react-icons/fa'
+import { ContactPerson, GeneralInformation } from '../Components/Informations'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 import { GiRotaryPhone } from 'react-icons/gi'
-import { BsTelephoneFill , BsPeopleFill} from 'react-icons/bs'
+import { BsTelephoneFill, BsPeopleFill } from 'react-icons/bs'
 
 function Contact() {
 
@@ -18,32 +18,54 @@ function Contact() {
         <span>Contact Us</span>
       </div>
       <div className={styles.all}>
-       
+
         <div className={styles.info_container}>
 
           <div className={styles.icons}>
             <BsPeopleFill />
           </div>
-          <div>
-          <p>{GeneralInformation.contactMob}</p>
+          <div className={styles.info_contact_div}>
+            <h6>Contact Person</h6>
+            {
+              ContactPerson.map(detail => {
+                return (
+                  <div >
+                    <h5>{detail.name}</h5>
+                    <p>{detail.number}</p>
+                  </div>
+                )
+              })
+            }
+            <p>{GeneralInformation.email}</p>
           </div>
-          
+
         </div>
 
         <div className={styles.info_container}>
           <div className={styles.icons}>
             <GiRotaryPhone />
-          </div>  
-            <p>{GeneralInformation.contactTel}</p>       
+          </div>
+          <div className={styles.info_contact_div}>
+            <h6>General Contact </h6>
+            <p>Tel :{GeneralInformation.contactTel}</p>
+            <p>Mobile :+91-{GeneralInformation.contactMob2}</p>
+            <p>Mobile :+91-{GeneralInformation.contactMob}</p>
+          </div>
+
         </div>
 
         <div className={styles.info_container}>
           <div className={styles.icons}>
-            <FaMapMarkerAlt/>
+            <FaMapMarkerAlt />
           </div>
-          
-            <p>{GeneralInformation.location}</p>
-      
+          <div className={styles.info_contact_div}>
+            <h6>Address</h6>
+            <p>{GeneralInformation.splitAdd.main}</p>
+            <p>{GeneralInformation.splitAdd.city}</p>
+            <p>{GeneralInformation.splitAdd.country}</p>
+          </div>
+
+
         </div>
       </div>
 
