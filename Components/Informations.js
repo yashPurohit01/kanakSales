@@ -4,10 +4,17 @@ export const GeneralInformation = {
     timeLaps: "30 years",
     date: "1992",
     companyDesc: "manufactures & wholesalers of screws and nuts",
-    location: "83, N.S Road 1st floor, kolkata-700001 West-Bengal, India",
+    location: "85, N.S Road 1st floor, kolkata-700001 West-Bengal, India",
     email: "kanaksalescorporation@gmail.com",
     contactTel: "+91-33-22106372",
-    contactMob: " 9836995399 / 7278365801",
+    contactMob: " 9836995399 ",
+    contactMob2: " 7278365801",
+    contactMob3: " 9874474439",
+    splitAdd:{
+        main:" 85, N.S Road 1st floor,",
+        city:" kolkata-700001 West-Bengal,",
+        country:"India."
+    },
     description: "Kanak Sales Corporation is in the business of hardware (Screws & Nut and Bolts) for last 30 years. We have been an established and popular company with excellent track record of Best Customer satisfaction"
 }
 
@@ -82,7 +89,8 @@ export const HomeQuanlityCard = [
 ]
 
 export const vision = {
-    des: " Think about the brands you purchase from over and over. Why do you choose to buy products and or services from them even when cheaper options exist? Well, theres a good reason for it.The reason we stay loyal to brands is because of their values.The best brands combine physical, emotional, and logical elements into one exceptional customer(and employee) experience that you value as much as they do. When your brand creates a genuine connection with customers and employees, they'll stay loyal to your company, thereby increasing your overall profitability. According to a Circular Board article, 74% of consumers say they’re loyal to a brand due to its product quality."
+    des:[ " Think about the brands you purchase from over and over. Why do you choose to buy products and or services from them even when cheaper options exist? Well, theres a good reason for it.","The reason we stay loyal to brands is because of their values.The best brands combine physical, emotional, and logical elements into one exceptional customer(and employee) experience that you value as much as they do."," When your brand creates a genuine connection with customers and employees, they'll stay loyal to your company, thereby increasing your overall profitability.",
+    " According to a Circular Board article, 74% of consumers say they’re loyal to a brand due to its product quality."]
 }
 export const reviews = [
     {
@@ -110,8 +118,8 @@ export const reviews = [
 
 export const HomeBrandPromotion = {
     tittle:"Shark & Gold ",
-    description:" are company Two Brands which  Deals with Stainless Steel Hardware, All were rust free with presize mesurement. Company Products are" ,
-    products: " Pan Slotted Self Tapping Screws, Pan Phillips Self Tapping Screws, Pan Phillips Self Drilling Screws, Pan Phillips  Machine Screws, Slotted Phillips  Machine Screws, Phillips Wood Screw, DryWall Screw."
+    description:" are company Two Brands which  Deals with Stainless Steel Hardware, All were rust free with presize mesurement. Company Products are ..." ,
+    products: [" Pan Slotted Self Tapping Screws", "Pan Phillips Self Tapping Screws", "Pan Phillips Self Drilling Screws", "Pan Phillips  Machine Screws"," Slotted Phillips Machine Screws ", "Phillips Wood Screw", "DryWall Screw"]
 }
 export const about = {
    desc:{

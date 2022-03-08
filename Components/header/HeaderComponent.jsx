@@ -12,7 +12,7 @@ import DropDownNavBar from '../shared/NavBar/DropDownNavBar'
 
 
 function HeaderComponent() {
-    const { email, location, contactMob, contactTel, companyName, companyDesc, Date, timeLaps } = GeneralInformation
+    const { email, location, contactMob, contactTel, companyName, companyDesc, Date, timeLaps , contactMob2 , contactMob3} = GeneralInformation
 
     return (
         <div>
@@ -32,7 +32,7 @@ function HeaderComponent() {
                             </div>
                             <div>
                                 <MdCall className={styles.icon} />
-                                <span className={styles.Mobinfo}>{contactMob}</span>
+                                <span className={styles.Mobinfo}>{contactMob} /  {contactMob2} / {contactMob3 } </span>
                             </div>
 
                         </div>
@@ -68,7 +68,7 @@ function HeaderComponent() {
                             <h3 style={{ marginBottom: 0 }}>Tel</h3>
                         </div>
 
-                        <p style={{ margin: 0 }}>{contactTel}</p>
+                        <p style={{ fontWeight:500}}>{contactTel}</p>
                     </div> 
          
                 </div>

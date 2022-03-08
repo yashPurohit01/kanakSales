@@ -45,5 +45,40 @@ $secondary: "Roboto Slab", serif;
       & .location{
           display: flex;
           justify-content: center;
+
+      }
+      & .all{
+        border-radius: 3px ;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+         & .info_container{
+           display: flex;
+          background-color: $yellow;
+          flex-direction: column;
+          width: max-content;
+          max-width: 30rem;
+          margin: 1rem;
+          align-items: center;
+          padding: 1rem;
+          border-radius: .5rem;
+          font-weight: $secondary;
+          & .icons{
+            background-color: $maroon;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: .7rem;
+            border-radius: 2rem;
+          }
+          & p{
+            width: 20rem;
+            text-align: center;
+            font-weight: $secondary;
+            font-size: 1.5rem;
+          }
+         }
+        
+        
       }
 }

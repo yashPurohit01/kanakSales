@@ -8,6 +8,9 @@ $grident: linear-gradient(
   rgba(247, 220, 34, 1) 95%
 );
 
+$textlogo: "Playfair Display", serif;
+$secondary: "Roboto Slab", serif;
+
 .container {
   & .home_first_row {
     display: flex;
@@ -93,24 +96,34 @@ $grident: linear-gradient(
       height: min-content;
     }
     & .vision_desc {
-      max-width: 28rem;
+      max-width: 60rem;
       margin-top: 1rem;
       & strong {
         font-family: "Permanent Marker", cursive;
       }
       & p {
-        padding: 0.6rem;
-        font-weight: 600;
-        font-family: 'Nunito', sans-serif;
+  /*       padding: 0.rem; */
+        font-weight: 500;
         letter-spacing: 0.2mm;
         text-align: justify;
-          
+        line-height: 9mm;
+        font-size: 1.2rem;
+          font-family: $secondary;
    /*      text-align: center; */
       }
       & h3 {
         text-align: center;
         color: $maroon;
         font-family: "Roboto Serif", sans-serif;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      & .left_col{
+        text-align: left;
+        width: 100%;
+      }
+      & p:nth-child(3){
+        font-weight: 600;
       }
     }
   }
@@ -172,11 +185,15 @@ $grident: linear-gradient(
       justify-content: space-evenly;
       display: flex;
       width: 100%;
+      align-items: center;
      & .logo{ 
-   
+      justify-content: center;
       flex-direction: column;
+      align-items: center;
        & .brand_logo{
            margin: 1rem;
+           display: flex;
+           justify-content: center;
        }
     }
     & .text{
@@ -184,7 +201,7 @@ $grident: linear-gradient(
       flex-direction: column;
       /* align-items: center; */
     /*   justify-content: center; */
-      max-width: 23.5rem;
+      max-width: 28rem;
       font-size: 1rem;
       font-family: 'Nunito', sans-serif;
      /*  text-align: center; */
@@ -202,8 +219,19 @@ $grident: linear-gradient(
         margin-top: 0.5rem;
         text-align: justify;
         padding: .5rem;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        & .products_info{
+          padding: 1rem;
+          padding-top: .2rem;
+          & .items_val{
+            & strong {
+            padding-bottom: 1rem;
+            }
+          }
+        }
       }
+      
     }
   }
   }
@@ -233,7 +261,9 @@ $grident: linear-gradient(
       & .cardItems > div{
           color: green;
           font-weight: 1000;
-          font-size: 2rem;
+          font-size: 2.3rem;
+          display: flex;
+          align-items: center;
       }
   }
   & h2{
@@ -250,7 +280,7 @@ $grident: linear-gradient(
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .grid {
     width: 100%;
     flex-direction: column;

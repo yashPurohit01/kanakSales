@@ -84,7 +84,7 @@ export default function Home() {
               <Image src="/images/companylogo.png" alt="logo" height="150" width="150" />
             </div>
             <div className={styles.brand_logo}>
-              <Image src="/images/companyLogo02.jpeg" alt="logo" height="120" width="180" />
+              <Image src="/images/SHARK.png" alt="logo" height="140" width="200" />
             </div>
           </div>
           <div className={styles.text}>
@@ -92,41 +92,49 @@ export default function Home() {
             <p>
               <strong>{HomeBrandPromotion.tittle}</strong>
               {HomeBrandPromotion.description}
-              <strong>{HomeBrandPromotion.products}</strong>
+              <div className={styles.products_info}>
+                
+                {HomeBrandPromotion.products.map((product, idx) =>{
+                  return(
+                    <div key={idx} className={styles.items_val}>
+                       <strong>
+                         {product}
+                       </strong>
+                    </div>
+                  )
+                })
+              
+              
+              }
+              </div>
             </p>
           </div>
         </div>
       </div>
       <div className={styles.home_third_row}>
-        <div className={styles.ownerImg}>
+  {/*       <div className={styles.ownerImg}>
 
           <Image src="/images/owner01.jpg" height="385" width="280" alt="owner image" />
 
-        </div>
+        </div> */}
         <div className={styles.vision_desc}>
           <h3>Our Vision</h3>
-          <strong>"</strong>
+          {/* <strong>"</strong> */}
 
-          <p>{des}</p>
-          <strong>"</strong>
+         {/*  <p>{des}</p> */}
+          {
+            des.map((data , indx)=>{
+              return(
+              
+                  <p key={indx}>{data}</p>
+                
+              )
+            })
+          }
+        {/*   <strong className={styles.left_col}>"</strong> */}
         </div>
       </div>
-      {/*  <div className={styles.home_review_row}>
-        {
-          reviews.map(review => {
-            return (
-              <div key={review.id} className={styles.review_card}>
-                <h5>{review.name}</h5>
-                <strong>"</strong>
 
-                <p>{review.review}</p>
-                <strong className={styles.com}>"</strong>
-
-              </div>
-            )
-          })
-        }
-      </div> */}
     </div>
   )
 }

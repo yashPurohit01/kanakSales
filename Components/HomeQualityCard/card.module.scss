@@ -25,6 +25,7 @@ $yellow: rgb(255, 217, 25);
                 align-items: center;
                 font-size: 1.2rem;
                 margin: 1rem;
+                margin-bottom: 1.4rem;
                 & p{
                 margin-bottom: 0;
                 text-align: center;
@@ -37,6 +38,9 @@ $yellow: rgb(255, 217, 25);
                 color: green;
                 font-weight: 800;
                 font-size: 2rem;
+                text-align: center;
+                display: flex;
+                align-items: center;
             }
         }
         & h2{

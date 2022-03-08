@@ -9,7 +9,7 @@ import { AiFillFacebook, AiFillInstagram } from 'react-icons/ai'
 import Link from 'next/link'
 
 function FooterComponent() {
-  const { companyName, companyDesc, description, location, email, contactMob } = GeneralInformation
+  const { companyName, companyDesc, description, location, email, contactMob, splitAdd, contactMob3, contactMob2 } = GeneralInformation
   return (
     <div className={styles.footer}>
       <div className={styles.footerContainer}>
@@ -22,8 +22,12 @@ function FooterComponent() {
           <div className={styles.para}>
             <p>{description}</p>
             <h3>Company Brands</h3>
-            <Image src="/images/companylogo.png" alt='logo' width="60" height="60" />
-            <Image src="/images/SHARK.png" height="80" width="100" alt="logo" />
+            <div className={styles.footer_logo}>
+            <Image src="/images/companylogo.png" alt='logo' width="100" height="100" />
+            <div className={styles.shark_logo}>
+              <Image src="/images/SHARK02.png" height="90" width="150" alt="logo" />
+            </div>
+            </div>
           </div>
         </div>
         <div className={styles.contact}>
@@ -31,18 +35,29 @@ function FooterComponent() {
           <div className={styles.hr} />
           <div className={styles.contact_container}>
 
-          <div className={styles.info}>
-              <BiCurrentLocation />
-            <p className={styles.location}> {location}</p>
-          </div>
-          <div className={styles.info}>
-            <MdCall />
-            <p className={styles.location}>{contactMob}</p>
-          </div>
-          <div className={styles.info}>
-            <IoMdMailUnread />
-            <p className={styles.location}>{email}</p>
-          </div>
+            <div className={styles.info}>
+              <div>
+                <BiCurrentLocation />
+              </div>
+              {/*      <p className={styles.location}> {location}</p> */}
+              <div className={styles.address}>
+                <p>{splitAdd.main}</p>
+                <p>{splitAdd.city}</p>
+                <p>{splitAdd.country}</p>
+              </div>
+            </div>
+            <div className={styles.info}>
+              <div>
+                <MdCall />
+              </div>
+              <p className={styles.location}>{contactMob} / {contactMob2} /{contactMob3}</p>
+            </div>
+            <div className={styles.info}>
+              <div>
+                <IoMdMailUnread />
+              </div>
+              <p className={styles.location}>{email}</p>
+            </div>
           </div>
         </div>
         <div className={styles.quickLinks}>

@@ -25,6 +25,21 @@ function ControlledCarousel() {
                 
 
             </div>
+          {/*   <div style={{margin:0}}>
+                <img src="/images/banner04.jpeg" alt="image2" />
+                
+
+            </div >
+            <div style={{margin:0}}>
+                <img src="/images/banner05.png" alt="image2" />
+                
+
+            </div >
+            <div style={{margin:0}}>
+                <img src="/images/banner06.jpeg" alt="image2" />
+                
+
+            </div > */}
         </Carousel>
     );
 }
