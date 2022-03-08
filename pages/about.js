@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/about.module.scss'
 import { BiLastPage } from 'react-icons/bi'
-import { about, AboutPage, GeneralInformation } from '../Components/Informations'
+import { about, AboutPage, Aboutproduct, GeneralInformation } from '../Components/Informations'
 import Image from 'next/image'
 
 function About() {
@@ -33,7 +33,20 @@ function About() {
                 </div>
               )
             })
+            
           }
+          
+           <div className={styles.about_info_blobs}>
+               <Image src={Aboutproduct.Imagepath} alt="img" height={Aboutproduct.height} width={Aboutproduct.width}/>
+               <div className={styles.info_content}>
+               <h3>{Aboutproduct.title}</h3>
+                   {
+                     Aboutproduct.desc.map((products)=><p key={products.id}>{products.name}</p> )
+                   }
+                 </div>
+           </div>  
+          
+
         </div>
         <div className={styles.note}>
         <p>Please feel free to keep in touch with us about any of your business related requirements/queries.</p>

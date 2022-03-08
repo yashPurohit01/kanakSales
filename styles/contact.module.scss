@@ -52,6 +52,7 @@ $secondary: "Roboto Slab", serif;
         font-size: 2rem;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
          & .info_container{
            display: flex;
           background-color: $yellow;

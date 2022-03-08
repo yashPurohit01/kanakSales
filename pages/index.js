@@ -97,9 +97,10 @@ export default function Home() {
                 {HomeBrandPromotion.products.map((product, idx) =>{
                   return(
                     <div key={idx} className={styles.items_val}>
-                       <strong>
+                      <li> <strong>
                          {product}
                        </strong>
+                       </li>
                     </div>
                   )
                 })
